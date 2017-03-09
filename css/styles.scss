@@ -1,0 +1,144 @@
+/* define variable colors */
+$white:			#fff;
+$yellow: 		#f2d40c;
+$light-grey:	#e9e9e9;
+$grey: 	 		#8e8e8e;
+$dark-grey:		#535756;
+$navy: 	 		#636998;
+$blue:	 		#2962ff; 
+
+/* define variable size */
+$val0: 0px;
+$val18: 18px;
+$val24: 24px;
+$val57: 57px;
+$val82: 82px;
+
+/* define other variables */
+$border-box: border-box;
+
+body { 
+	font-family:Helvetica, Helvetica Neue, Arial, sans-serif; 
+	font-size:18px;
+	font-weight:bold;
+	
+	/* bdp: business details page */
+	#bdp-container { 
+		width:308px; 
+		height:737px; 
+		border:$val24 solid $blue;
+		
+		/* common used classes */
+		.fg-yellow { color:$yellow; }
+		.fg-grey { color:$grey; }
+		.fg-dark-grey { color:$dark-grey; }
+		.fg-navy { color:$navy; }
+		.fg-blue { color:$blue; }
+		.bg-blue { background-color:$blue; }
+		.left { float:left; }
+		.right { float:right; }
+		.clear { clear:left; clear:right; }
+		&.wrap-center, .wrap-center { padding:0 16px; }
+		.border-box
+		{
+			-moz-box-sizing: $border-box; 
+			-webkit-box-sizing: $border-box; 
+			 box-sizing: $border-box;
+		}
+		.truncate-text 
+		{
+			width: 290px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		
+		/* bdp main image */
+		>.bdp-image
+		{
+			background-image:url('http://www.localsearch.com.au/sys/ld/68/FEATURE/Plumbing/100760_Feature.png');
+			height: 451px;
+			background-repeat:no-repeat;
+			background-position:center;
+			margin:0 -16px;
+		}	 
+		>.bdp-details 
+		{ 
+			height:286px; 
+			padding-top:40px; 
+			position:relative;	
+			> h1 
+			{ 
+				font-size:$val24; 
+				margin-bottom:$val0;  
+			}
+			i { 
+				width:$val18; 
+				height:$val24; 
+			} 
+			> .bdp-logo
+			{
+				background-image:url('http://www.localsearch.com.au/sys/ld/68/LISTINGS/886/75/8867594/8867594_1506086_LD.png');
+				background-position:center;
+				background-size:cover;
+				width:$val82; 
+				height:$val82; 
+				border-radius: 50%; 
+				border:3px solid $white;
+				margin-top:-85px;
+			}			
+			> .bdp-rating 
+			{ 
+				label
+				{
+					line-height:27px;
+					&:before { content:'\00a0\00a0'; } 
+				}	
+				/* icon star yellow */
+				.star-yellow 
+				{ 
+					background:url('../images/sprite-icons.png') 0 0 no-repeat; 
+				} 
+				/* icon star grey */
+				.star-grey 
+				{ 
+					background:url('../images/sprite-icons.png') -24px 0 no-repeat;
+				} 
+			}
+			> .bdp-phone { margin-top:40px; }
+			> .bdp-location 
+			{
+				/* checkin icon */
+				i 
+				{ 
+					background:url('../images/sprite-icons.png') -48px 0 no-repeat; 
+					width:$val24;
+				}
+			}
+			> .bdp-info 
+			{ 
+				height:$val57; 
+				border-top:1px solid $light-grey; 
+				position:absolute; /* to allow border-top whole width */
+				width:340px; 
+				left:$val0; 
+				bottom:$val0;
+				margin:0 -16px;
+				/* vertical align content middle */
+				> div
+				{
+					position: relative;
+					top: 28%;
+					display: list-item;
+					list-style-type:none;
+				}
+				/* info icon */
+				i 
+				{ 
+					background:url('../images/sprite-icons.png') -72px 0 no-repeat; 
+					width:$val24;
+				}
+			}
+		}
+	}
+}

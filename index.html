@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="iso-8859-1" /> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/x-icon" href="http://www.localsearch.com.au/resources/pluto/images/branding/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="./build/styles.min.css" />
+		<title>Local Search - CSS Layout Task</title>
+	</head>
+	<body>
+		<!-- bdp: business details page -->
+		<div id="bdp-container" class="left wrap-center">
+			<!-- in case N business, dynamic content load (json & ajax) . loop goes here -->
+			<!-- business background image -->
+			<div class="bdp-image"></div>
+			<!-- content business details, including business name, rating, location and quick info -->
+			<div class="bdp-details border-box">
+				<!-- business logo -->
+				<div class="bdp-logo"></div> 
+				<!-- name business -->
+				<h1 class="truncate-text fg-dark-grey">Lee’s Personal Plumbing &amp; Maintenance</h1>
+				<!-- content business rating -->
+				<div class="bdp-rating">
+					<i class="left star-yellow"></i>
+					<i class="left star-yellow"></i>
+					<i class="left star-yellow"></i>
+					<i class="left star-yellow"></i>
+					<i class="left star-grey"></i>
+					<label class="fg-yellow">4.0</label>
+				</div>
+				<p class="bdp-phone fg-navy">0420 92 3923</p>
+				<!-- content business location -->				
+				<div class="bdp-location">
+					<i class="left"></i>
+					<label class="left fg-grey">Servicing Robina, QLD</label>
+					<label class="right fg-grey">0.0km</label>
+				</div>
+				<!-- content business quick info, link to redirect -->
+				<div class="bdp-info border-box fg-blue clear">
+					<div class="wrap-center">
+						<label class="left">Quick info</label>
+						<i class="right"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
